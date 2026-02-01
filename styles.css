@@ -38,12 +38,62 @@ nav {
   margin-left: 60px;
 }
 
+/* Hero section styles  */
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
+.hero-content {
+  background: linear-gradient(to right, #fff1b8, #ffd6cc);
+  padding: 130px 105px;
+}
+
+.hero-content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+}
+
+.hero-content p {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+.heroSection img {
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-content button {
+  padding: 15px 80px;
+  color: white;
+  background-color: #ff7a78;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+}
 
 @media screen and (min-width: 576px) {
   .menuOptions ul {
     flex-direction: row;
     gap: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .heroSection {
+    flex-direction: row;
+    text-align: start;
+  }
+
+  .heroSection img {
+    width: 50%;
   }
 }
 
