@@ -1,0 +1,32 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    background-color: #FF7A78;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 10px 15px;
+}
+
+nav a {
+    color: black;    
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+nav img {
+  height: 40px;
+  width: 40px;
+}
+
