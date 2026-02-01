@@ -1,32 +1,60 @@
-
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navigation Bar Styles */
 nav {
-    display: flex;
-    background-color: #FF7A78;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 35px;
-    padding: 10px 15px;
+  background-color: #ff7a78;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 
-nav a {
-    color: black;    
-    text-decoration: none;
-    font-family: "Playfair Display", serif;
-    font-size: 18px;
-    font-weight: 900;
-    letter-spacing: 5px;
+.menuOptions ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-nav img {
+.menuOptions a {
+  text-decoration: none;
+  color: black;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  letter-spacing: 5px;
+  line-height: 40px;
+}
+
+.menuBar {
   height: 40px;
   width: 40px;
+  cursor: pointer;
+  margin-left: 60px;
 }
 
+
+
+@media screen and (min-width: 576px) {
+  .menuOptions ul {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    padding: 10px 40px;
+    justify-content: center;
+  }
+
+  .menuOptions ul {
+    justify-content: center;
+    gap: 80px;
+  }
+}
