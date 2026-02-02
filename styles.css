@@ -38,12 +38,85 @@ nav {
   margin-left: 60px;
 }
 
+/* styles for hero section */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #fff1b8 0%, #f6d2bf 45%, #f3c1e6 100%);
+}
+
+.hero-intro {
+  width: 100%;
+  padding: 100px 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-intro h1 {
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.hero-intro p {
+  line-height: 1.6;
+  font-weight: 450;
+}
+
+.hero-intro button {
+  padding: 20px 80px;
+  background-color: #ff7a78;
+  border: none;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.hero-image {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* footer styles  */
+
+
 
 
 @media screen and (min-width: 576px) {
   .menuOptions ul {
     flex-direction: row;
     gap: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero-content {
+    flex-direction: row;
+  }
+
+  .hero-intro {
+    width: 50%;
+    text-align: start;
+    align-items: start;
+    gap: 60px;
+  }
+
+  .hero-image {
+    width: 50%;
+  }
+
+  .hero-intro h1 {
+    font-size: 50px;
+    letter-spacing: 6px;
   }
 }
 
@@ -56,5 +129,8 @@ nav {
   .menuOptions ul {
     justify-content: center;
     gap: 80px;
+  }
+
+  .hero-intro {
   }
 }
